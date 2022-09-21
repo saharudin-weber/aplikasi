@@ -1,0 +1,51 @@
+.container{
+    width: 80%;
+    margin: 50px auto;
+    /* border: 1pc solid red; */
+    
+    
+}
+
+.conatiners{
+display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+
+}
+.wh{
+   
+    /* width: 400px; */
+    min-width: 400px;
+    /* border: 1px solid red; */
+    max-width: 350px;
+    text-align: center;
+    /* display: flex;
+    place-content: center;
+    padding: 10px; */
+}
+legend{
+text-transform: capitalize;
+}
+fieldset{
+    height: 380px;
+}
+form{
+    text-align: center;
+}
+button{
+    margin-top: 30px;
+    width: 80px;
+    height: 30px;
+}
+.filePict{
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin: 10px auto;
+    width: 400px;
+    display:flex ;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

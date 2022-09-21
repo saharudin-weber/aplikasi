@@ -1,0 +1,122 @@
+body{
+    background-color: #323e45;
+    width: 100%;
+}
+h2{
+    color: #ccd2c6;
+}
+.container{
+    padding-top: 30px;
+    margin: auto;
+    max-width: 50%;
+    background-color: #3a4e51;
+    margin-top: 180px;
+    text-align: center;
+    border: 2px solid #ccd2c6;
+    position: relative;
+    overflow: hidden;
+  
+    
+   
+}
+.register{
+    /* border: 4px solid red; */
+    display: flex;
+   
+    width: 100%;
+    justify-content:center 
+    
+
+}
+.register button{
+    width: 90px;
+   
+}
+
+.register input[type="text"],.register input[type="email"],.register input[type="password"] {
+	margin: 10px;
+    height: 20px;
+    width: 80%;
+    max-width: 300px;
+    color: #3a4e51;
+}
+
+.register input[type="checkbox"]{
+    background-color: #323e45;
+    border: 1px solid #ccd2c6;
+    margin-bottom:  10px;
+    color: #ccd2c6;
+    
+}
+
+.register span{
+    color: antiquewhite;
+}
+
+
+
+.login{
+    /* border: 4px solid red; */
+    display: flex;
+    height: 200px;
+    height: 100%;
+    width: 100%;
+    justify-content:center 
+    
+
+}
+.login button{
+    width: 90px;
+  
+}
+
+.login input[type="text"],.login input[type="email"],.login input[type="password"] {
+	margin: 10px;
+    height: 20px;
+    max-width: 300px;
+    width: 80%;
+    color: #3a4e51;
+}
+
+.login input[type="checkbox"]{
+    background-color: #323e45;
+    border: 1px solid #ccd2c6;
+    margin-bottom:  10px;
+    color: #ccd2c6;
+    
+}
+
+.login span{
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+
+.container-3{
+   width: 200%;
+    margin-left: -100%;
+    display: flex;
+    /* padding-bottom:130px; */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+legend{
+    color:#8ba88e ;
+    font-size: 30px;
+    font-weight: bold;
+    
+
+}
+h2{
+   cursor: pointer; 
+}
+
+fieldset{
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+   
+}
+button{
+    margin: 10px;
+}

@@ -1,0 +1,111 @@
+
+    <div class="container">
+        <div class="namaLengkapW">
+        
+                <form id="form1" method="post" action="/input1/<%= data.nama %>" enctype="multipart/form-data">
+                  <div class="conatiners">
+                    <div class="FormP wh">
+                        <fieldset>
+                            <legend>Masukkan Data Pengantin PRIA</legend><br>
+                            <input type="text" name="namap" placeholder="nama Lengkap Pria" required minlength="4">
+                        <br><br>
+                        
+                        <input type="text" name="TTlp" placeholder="Tempat, tanggal lahir"required minlength="4">
+                        <br><br>
+                        <input type="radio" name="agamap" id="" value="islam">islam
+                        <input type="radio" name="agamap" id=""value="kristen">kristen
+                        <input type="radio" name="agamap" id="" value="budha">budha
+                        <input type="radio" name="agamap" id=""value="katolik">katolik
+                        <br><br>
+                        <input type="text" name="PekerjaanP" placeholder="pekerjaan"required minlength="4">
+                        <p>===II========II=====II</p>
+                        <br>
+                        <input type="text" name="bpkP" placeholder="nama Ayah" required minlength="4"><br><br>
+                        <input type="text" name="ibuP" placeholder="nama ibu" required minlength="4">
+
+                        </fieldset><br>
+                    
+                    </div>
+                    <div class="formW wh">
+                        <fieldset>
+                            <legend>Masukkan Data Pengantin WANITA</legend><br>
+                            <input type="text" name="namaW" Placeholder="nama Lengkap Wanita" required minlength="4">
+                        <br><br>
+                        
+                        <input type="text" name="TTlW" placeholder="Tempat, tanggal lahir"required minlength="4">
+                        <br><br>
+                        <input type="radio" name="agamaW" id="" value="islam">islam
+                        <input type="radio" name="agamaW" id=""value="kristen">kristen
+                        <input type="radio" name="agamaW" id="" value="budha">budha
+                        <input type="radio" name="agamaW" id=""value="katolik">katolik
+                        <br><br>
+                        <input type="text" name="PekerjaanW" placeholder="pekerjaan"required minlength="4">
+                        <p>===II========II=====II</p>
+                        <br>
+                        <input type="text" name="ibuW" placeholder="nama Ayah" required minlength="4"><br><br>
+                        <input type="text" name="bpkW" placeholder="nama ibu" required minlength="4">
+
+                        </fieldset>    
+                    </div>
+                    <div class="respsiAKAD wh">
+                        <fieldset>
+                            <legend>Akad & Respsi</legend>
+                  
+                   
+                        <p>Akad</p>
+                        <label for="cars">Hari</label>
+
+                        <select id="cars" name="hari">
+                            <option value="senin">senin</option>
+                            <option value="selasa">selasa</option>
+                            <option value="rabu">rabu</option>
+                            <option value="kamis">kamis</option>
+                            <option value="jumat">jumat</option>
+                            <option value="sabtu">sabtu</option>
+                            <option value="minggu">minggu</option>
+                        </select><br><br>
+                        <input type="datetime-local" name="dateA" id=""><br><br>
+                        <input type="text" name="LokasiA" placeholder="Massukan lokasi anda" minlength="6">
+                      
+                        <p>===II========II=====II</p>
+                        <p>Resepsi</p>
+                        <label for="cars">Hari</label>
+
+                        <select id="cars" name="hari1">
+                            <option value="senin">senin</option>
+                            <option value="selasa">selasa</option>
+                            <option value="rabu">rabu</option>
+                            <option value="kamis">kamis</option>
+                            <option value="jumat">jumat</option>
+                            <option value="sabtu">sabtu</option>
+                            <option value="minggu">minggu</option>
+                        </select><br><br>
+                        <input type="datetime-local" name="dateB" id=""><br><br>
+                        <input type="text" name="LokasiB" placeholder="Massukan lokasi anda" minlength="6">
+
+                    
+
+                        </fieldset> 
+                     </div>  
+                        <div class="filePict">
+                            <label for="pic1">Masukkan Gambar 1</label>
+                            <br>
+                         <input type="file" name="multiFiles" accept="image/png, image/gif, image/jpeg" id="pic1" /><br /><br />
+                         <label for="pic1">Masukkan Gambar 2</label>
+                            <br>
+                        <input type="file" name="multiFiles" accept="image/png, image/gif, image/jpeg"  /><br /><br />
+                        <label for="pic1">Masukkan Gambar 3</label>
+                            <br>
+                        <input type="file" name="multiFiles" accept="image/png, image/gif, image/jpeg"  /><br /><br />
+
+                        </div>
+                       
+                   
+                   
+                  </div>
+                    
+        
+                  <button type="submit" id="insert"Insert>Input</button> 
+                </form>
+      
+    </div>

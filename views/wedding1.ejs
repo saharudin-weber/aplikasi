@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>halaman utama</title>
+    <link rel="stylesheet">
+    <style>
+        body{
+    background-color: #f7d3c3;
+}
+.container{
+  /* display: grid; */
+margin: auto;
+width: 1200PX;
+max-width:100%;
+height: 900px;
+
+border-radius: 10px;
+position: relative;
+}
+header{
+    box-sizing: border-box;
+    margin: auto;
+    width: 1000px;
+    max-width:100%;
+    border-radius: 5px;
+    background-image: url('/images/<%= data.foto1%> ');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 400px;
+}
+.bodi{
+    background-color:#f24463 ;
+
+    padding:  5px;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    margin-top: -6px;
+    text-align: center;
+    color:#fAEDE7 ;
+    height: 100px;
+  
+}
+.bodi h3{
+    text-shadow: 0px 5px rgba(0, 0, 0,0.3);
+   font-size: 30px;
+    text-transform:uppercase;
+}
+
+footer{
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 120px;
+    width: 100%;
+   
+}
+/*  */
+
+nav{
+    margin-top: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    max-height: 974.4px;
+    height: auto;
+   
+}
+nav .pheder{
+    margin: 10px 10px;
+    /* border: 1px solid red; */
+    background-color: #dc8665;
+    color: #fAEDE7;
+    width: 350px;
+    box-sizing: border-box;
+    
+}
+nav .pheder p:nth-child(1){
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400px;
+    /* text-decoration: underline; */
+    border-bottom: 3px solid rgb(255, 227, 227);
+}
+nav .pheder p:nth-child(2),nav .pheder p:nth-child(3),
+nav .pheder p:nth-child(4),nav .pheder p:nth-child(5),
+nav .pheder p:nth-child(6),nav .pheder p:nth-child(7),
+nav .pheder p:nth-child(8){
+    margin-left: 30px;
+}
+.tukar{
+    order: 1;
+}
+.tukar1{
+    order: 2;
+  
+}
+.tukar2{
+    order:3;
+    
+}
+
+nav .pheder.tukar1 .pb{
+    background-image: url('/img/wedding1/2.png');
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-left: -30px;
+}
+
+
+
+.foto{
+    display: grid;
+    background-color: #E8C5C5;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    flex-wrap:wrap ;
+    
+}
+.foto h1{
+    text-align: center;
+    margin: auto;
+    color: aliceblue;
+    width: 80%;
+    border-bottom:4px solid #FDE3E3;
+
+    
+}
+.foto .Stikerfoto{
+    background-image: url('/img/wedding1/3.png');
+    height: 300px;
+    width: 400px;
+    margin: auto;
+}
+.foto .fotoPrewed{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #FDE3E3;
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    
+}
+.foto .fotoPrewed img{
+    border-radius: 10px;
+
+   margin: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+.jadwalLokasi{
+    width: 100%;
+    height: auto;
+    background-color:rgb(255, 173, 173) ;
+    /* position: absolute; */
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.jadwalLokasi .StikerLokasi{
+       
+        background-image: url('../gambar/4.png');
+        /* border: 1px solid black; */
+        background-repeat: no-repeat;
+
+}
+.StikerLokasi .lokasi {
+    height: 400px;
+    width: 300px;
+
+}
+
+.jadwalLokasi .lokasi{
+    /* height: ;
+    width: 300px; */
+    padding: 10px;
+    text-align: center;
+    /* border: 1px solid black; */
+
+}
+.jadwalLokasi .lokasi .AkadNikah{
+    background-color: #f24463;
+    color: bisque;
+    padding: 10px;
+    border-radius: 20px 0px;
+    margin: 10px;
+}
+.jadwalLokasi .lokasi h1{
+   border-bottom: 2px solid bisque;
+}
+
+
+.timer{
+    background-color: #E8C5C5;
+    text-align: center;
+    margin: auto;
+    padding: 10px 5px;
+    width: 400px;
+    /* border: 1px solid black; */
+}
+.timer .box{
+    margin: auto;
+    font-size: 30px;
+    background-color: rgb(87, 87, 87);
+   text-align: center;
+   line-height: 70px;
+   color: #fAEDE7;
+    min-width: 70px;
+    max-width: auto;
+    height: 70px;
+    border: 1px solid black;
+}
+span{
+    text-transform: capitalize;
+}
+
+
+
+@media screen and (max-width: 755px) {
+    .tukar1{
+     order: 2;
+      display: none;
+    }
+    .tukar2{
+    
+     order: 3;
+    }
+ }
+ 
+@media screen and (max-width: 1127px) {
+   .tukar1{
+    order: 3;
+   }
+   .tukar2{
+    order: 2;
+   }
+}
+
+@media screen and (max-width: 900px) {
+    footer{
+        font-size: 20px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+
+        </header>
+        <div class="bodi">
+            <h3><span> <%= data.namap %></span> & <span><%= data.namaW %> </span> </h3>
+        </div>
+        <footer>
+            <p>ِبِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيْم</p> 
+            <p>“Maha Suci Tuhan yang telah menciptakan pasangan-pasangan 
+                semuanya, baik dari apa yang ditumbuhkan oleh bumi dan daridiri 
+                mereka maupun dari apa yang tidak mereka ketahui.”
+                “surah yasin 36:36”</p>  
+                <p> “surah yasin 36:36”</p> 
+                </footer>
+
+        <nav>
+                    <div class="pheder tukar">
+                    
+                        <p> <span> <%= data.namap %> </span></p>
+                    <p>Nama Lengkap : <span> <%= data.namap %>  </span></p>
+                    <p>Tempat, tanggal lahir: <span> <%= data.TTlp  %> </span></p>
+                    <p>Agama : <span> <%= data.agamap  %> </span> </p>
+                    <p>Pekerjaan : <span> <%= data.PekerjaanP  %></span> </p>
+                    <p> ===II========II=====II</p>
+                    <p>Nama Ayah: <span><%= data.bpkP  %></span> </p>
+                    <p>Nama Ibu: <span> <%= data.ibuP  %>  </span></p>
+
+                    
+                        
+                    </div>
+            <div class="pheder tukar1">
+                <div class="pb"></div>
+                
+            </div>
+                    <div class="pheder tukar2">
+                    
+                        <p> <span><%= data.namaW %> </span> </p>
+                    <p>Nama Lengkap :  <span> <%= data.namaW  %> </span> </p>
+                    <p>Tempat, tanggal lahir: <span> <%= data.TTlW  %> </span>  </p>
+                    <p>Agama : <span> <%= data.agamaW  %></span> </p>
+                    <p>Pekerjaan : <span> <%= data.PekerjaanW  %> </span> </p>
+                    <p> ===II========II=====II  </p>
+                    <p>Nama Ayah: <span> <%= data.bpkW  %>  </span></p>
+                    <p>Nama Ibu: <span><%= data.ibuW  %> </span> </p>
+
+                    
+                        
+                    </div>
+                
+           
+        
+            </nav>
+
+            <div class="foto">
+                <h1>Foto Prewedding</h1>
+                <div class="Stikerfoto">
+
+                </div>
+                <div class="fotoPrewed">
+                    <img src="/images/<%= data.foto1%>" alt="">
+                    <img src="/images/<%= data.foto2%>">
+                    <img src="/images/<%= data.foto3%>" alt="">
+
+                </div>
+            </div>
+                <div class="jadwalLokasi">
+                    <div class="StikerLokasi">
+                        <img src="/img/wedding1/4.png" alt="">
+                    </div>
+                    <div class="lokasi">
+                        <h1> Rangkaian Acara</h1>
+                        <div class="AkadNikah">
+                            <h1>Akad Nikah</h1>
+                            <h2> <span> <%= data.hari %></span> </h2>
+                            <h2><%= data.dateA  %></h2>
+                            <h2> <span><%= data.LokasiA  %>  </span></h2>
+                        </div>
+                        <div class="AkadNikah">
+                            <h1>Resepsi</h1>
+                            <h2> <span> <%= data.hari1  %> </span> </h2>
+                            <h2><span> <%= data.dateB  %></span> </h2>
+                            <h2> <span> <%= data.LokasiB  %> </span></h2>
+                        </div>
+
+                    
+                    </div>
+                    <div class="timer">
+                        <h1>Timer</h1>
+                        <div class="waktu">
+                           <h2> Jam</h2> 
+                           <div class="box"></div>
+                        </div>
+                        <div class="waktu">
+                            <h2>Menit</h2>
+                            <div class="box"></div>
+                        </div>
+                        <div class="waktu">
+                            <h2>Detik</h2>
+                            <div class="box"></div>
+                        </div>
+
+                    </div>
+
+                
+                </div>
+
+
+    </div>
+
+    
+   
+
+    <script>
+
+const jam = document.getElementsByClassName('box')[0]
+jam.addEventListener('click',()=>{
+    alert('ok')
+})
+const menit = document.getElementsByClassName('box')[1]
+const detik12 = document.getElementsByClassName('box')[2]
+const hitung =(jam,menit,detik)=>{
+    let data = jam*3600 + menit*60 +detik
+    return data
+
+}
+const hitungTahun =(tahun,bulan)=>{
+    let data = tahun*31536000 + bulan*2628000 
+    return data
+
+}
+
+
+function hitungMundur(dateA){
+  
+    let data = dateA.split('-')
+    // console.table(data)
+    // data = data.map(a => parseInt(a) )
+   
+    let [tahun,bulan,waktu]= data
+     waktu= waktu.split('T')
+    
+     let detik = waktu[1].split(':')
+    //  console.log(detik[0])
+    
+    
+    setInterval(()=>{
+    let tgl = new Date()
+    let iniTanggalTahun= hitungTahun(tgl.getFullYear(),tgl.getMonth()+1 )
+    let datakuTahun = hitungTahun( tahun,bulan)
+
+// let format_tgl = tgl.getFullYear() + "-" + (tgl.getMonth() + 1) + "-" + tgl.getDate() + " " + tgl.getHours() + ":" + tgl.getMinutes() + ":" + tgl.getSeconds() 
+let iniTanggal = hitung(tgl.getHours(),tgl.getMinutes(),tgl.getSeconds() )
+let dataku = hitung(detik[0],detik[1],1)
+// console.log(dataku)
+// console.log(iniTanggal)
+
+
+
+// console.log(data32)
+let data32 =  (dataku + datakuTahun)-(iniTanggal + iniTanggalTahun)
+// console.log(data32)
+
+if( data32 < 0){
+   
+    return false
+}
+let jams = Math.floor(data32 /3600);
+        
+data32 = data32 - jams*3600;
+
+let menits = Math.floor(data32 /60);
+
+let detiks = data32 - menits*60;
+// console.log(jams)
+// console.log(menits)
+// console.log(detiks)
+
+jam.textContent = jams
+menit.innerHTML = menits
+detik12.innerHTML= detiks
+
+
+
+},1000) 
+    // console.info(format_tgl)
+    // console.info(iniTanggal)
+
+}
+
+let dataku = document.querySelector('.AkadNikah h2:nth-child(3)')
+const DateA = dataku.innerHTML
+
+hitungMundur(DateA)
+    </script>
+    
+</body>
+</html>
