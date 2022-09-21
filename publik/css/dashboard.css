@@ -257,4 +257,12 @@ body{
         padding:0px;
         justify-content:center;
     }
+    .rigth{
+        height: 70px;
+  
+        /* position: absolute; */
+    }
+    .rigth h1{
+        font-size:40px
+    }
 }
