@@ -28,7 +28,7 @@ body{
 }
 .lefts{
     width: 20%;
-    height: 900px;
+    height: 100%;
     /* height: 100%; */
     position: fixed;
     background-color:#0d2c66; 
