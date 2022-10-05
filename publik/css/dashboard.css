@@ -110,7 +110,7 @@ body{
     border-radius: 10px 5px;
     width: 80%;
     margin: 10px auto;
-    /* height: 400px; */
+    height: 400px;
     max-width: 100%;
     min-height: 300px;
     overflow: hidden;
